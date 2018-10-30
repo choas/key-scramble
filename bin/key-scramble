@@ -1,0 +1,10 @@
+#!/usr/bin/env node
+
+var keyScramble = require("../");
+
+if (process.argv.length <= 2) {
+  console.log("usage: key-scramble key_secret_token");
+  process.exit(-1);
+}
+
+process.exit(console.log(keyScramble(process.argv[2])));
