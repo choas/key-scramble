@@ -3,8 +3,8 @@
 var keyScramble = require("../");
 
 if (process.argv.length <= 2) {
-  console.log("usage: key-scramble key_secret_token");
+  console.log("usage: key-scramble key_secret_token [--resetNumber]");
   process.exit(-1);
 }
 
-process.exit(console.log(keyScramble(process.argv[2])));
+process.exit(console.log(keyScramble(process.argv[2], process.argv[3])));
