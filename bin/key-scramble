@@ -6,5 +6,5 @@ if (process.argv.length <= 2) {
   console.log("usage: key-scramble key_secret_token [--resetNumber]");
   process.exit(-1);
 }
-
-process.exit(console.log(keyScramble(process.argv[2], process.argv[3])));
+let resetNumber = process.argv[3] && process.argv[3] === "--resetNumber";
+process.exit(console.log(keyScramble(process.argv[2], resetNumber)));

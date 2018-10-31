@@ -10,7 +10,7 @@ function scramble(key, resetNumber) {
 
   var newkey = "";
   String(key).split("").forEach((c) => {
-    if (resetNumber && resetNumber === "--resetNumber") {
+    if (resetNumber) {
       if (c >= "0" && c <= "9") {
         newkey += "9";
       } else {
