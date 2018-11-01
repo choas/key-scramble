@@ -1,6 +1,6 @@
 {
   "name": "key-scramble",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "scrambles strings e.g. keys, secrets, tokens",
   "main": "key-scramble.js",
   "scripts": {
